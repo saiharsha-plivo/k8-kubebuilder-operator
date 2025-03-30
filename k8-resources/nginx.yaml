@@ -1,0 +1,11 @@
+apiVersion: service.my.domain/v1
+kind: WebApplication
+metadata:
+  name: nginx
+spec:
+  replica: 1
+  servicetype: NodePort
+  image: nginx
+  port: 80
+  containerport: 80
+  nodeport: 30007
